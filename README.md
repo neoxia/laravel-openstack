@@ -17,7 +17,7 @@ In order to install this package, add `neoxia/laravel-openstack` in `composer.js
 And add the service provider in `config/app.php`.
 
 ```PHP
-Neoxia\Filesystem\OpenstackServiceProvider::class,
+Neoxia\Filesystem\OpenStackServiceProvider::class,
 ```
 
 ## Configuration

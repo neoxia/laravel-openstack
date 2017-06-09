@@ -1,6 +1,6 @@
 <?php
 
-namespace Neoxia\LaravelOpenStack;
+namespace Neoxia\Filesystem;
 
 use Illuminate\Support\ServiceProvider;
 use League\Flysystem\Filesystem;
