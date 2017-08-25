@@ -28,13 +28,14 @@ To configure a new Laravel storage disk on OpenStack, provide a configuration li
 'disks' => [
 
     'openstack' => [
-        'driver'      => 'openstack',
-        'username'    => env('OS_USERNAME', ''),
-        'password'    => env('OS_PASSWORD', ''),
-        'container'   => env('OS_CONTAINER', ''),
-        'tenant_name' => env('OS_TENANT_NAME', ''),
-        'endpoint'    => env('OS_ENDPOINT', ''),
-        'region'      => env('OS_REGION', ''),
+        'driver'        => 'openstack',
+        'username'      => env('OS_USERNAME', ''),
+        'password'      => env('OS_PASSWORD', ''),
+        'container'     => env('OS_CONTAINER', ''),
+        'tenant_name'   => env('OS_TENANT_NAME', ''),
+        'endpoint'      => env('OS_ENDPOINT', ''),
+        'service_name'  => env('OS_SERVICE_NAME', 'swift'),
+        'region'        => env('OS_REGION', ''),
     ],
 
 ],
