@@ -22,6 +22,7 @@ class OpenStackServiceProvider extends ServiceProvider
             $client = new OpenStack($config['endpoint'], [
                 'username' => $config['username'],
                 'password' => $config['password'],
+                'tenantId' => $config['tenant_id'],
                 'tenantName' => $config['tenant_name'],
             ]);
 
