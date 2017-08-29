@@ -10,7 +10,7 @@ In order to install this package, add `neoxia/laravel-openstack` in `composer.js
 
 ```JS
 "require": {
-    "neoxia/laravel-openstack": "1.0.*"
+    "neoxia/laravel-openstack": "1.1.*"
 },
 ```
 
