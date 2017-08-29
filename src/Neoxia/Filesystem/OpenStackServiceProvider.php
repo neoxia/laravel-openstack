@@ -25,7 +25,7 @@ class OpenStackServiceProvider extends ServiceProvider
                 'tenantName' => $config['tenant_name'],
             ]);
 
-            $store = $client->objectStoreService('swift', $config['region']);
+            $store = $client->objectStoreService($config['service_name'], $config['region']);
             $container = $store->getContainer($config['container']);
 
             return new Filesystem(new RackspaceAdapter($container));
