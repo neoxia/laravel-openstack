@@ -3,7 +3,6 @@
 namespace Neoxia\Filesystem;
 
 use Illuminate\Support\ServiceProvider;
-use League\Flysystem\Filesystem;
 use League\Flysystem\Rackspace\RackspaceAdapter;
 use OpenCloud\OpenStack;
 
@@ -29,7 +28,7 @@ class OpenStackServiceProvider extends ServiceProvider
             $store = $client->objectStoreService($config['service_name'], $config['region']);
             $container = $store->getContainer($config['container']);
 
-            return new Filesystem(new RackspaceAdapter($container));
+            return new OpenStackFileSystem(new RackspaceAdapter($container));
         });
     }
 
