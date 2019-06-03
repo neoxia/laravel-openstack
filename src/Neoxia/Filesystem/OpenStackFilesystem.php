@@ -8,6 +8,10 @@ class OpenStackFileSystem extends BaseFilesystem
 {
     public function getSecureUrl($relativePath)
     {
-        return $this->adapter->getContainer()->getObject($relativePath)->getTemporaryUrl(60, 'GET');
+        try {
+            return $this->adapter->getContainer()->getObject($relativePath)->getTemporaryUrl(60, 'GET');
+        } catch (\Exception $e) {
+            \Log::warning('Could not fetch ' . $relativePath);
+        }
     }
 }
