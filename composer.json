@@ -4,8 +4,8 @@
     "description": "OpenStack filesystem service provider for Laravel",
     "require": {
         "php": ">=5.5.9",
-        "illuminate/support": "5.1 - 5.7",
-        "illuminate/filesystem": "5.1 - 5.7",
+        "illuminate/support": "5.1 - 5.8",
+        "illuminate/filesystem": "5.1 - 5.8",
         "league/flysystem-rackspace": "1.0.*"
     },
     "autoload": {
